@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  background-color: #f1f1ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal {
+  backdrop-filter: blur(20px) !important;
+}
+
+.navbar {
+  z-index: 1030;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0px 0px 40px 0px lightblue !important;
+  background-color: rgb(255, 255, 255, 0.60) !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height .2s ease;
+  -o-transition: height .2s ease;
+  transition: height .2s height;
+}
+
+.logo {
+  width: 40px;
+}
+
+.home_header_body {
+  background-color: rgb(10, 10, 10, 0.60);
+}
+
+.home_header_body_card {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home_header_body_card_text {
+  color: white;
+  max-width: 600px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header {
+  background: url(../img/bg1.jpg)
+  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.preload-images {
+  background-image: 
+  url("../img/bg1.jpg"),
+  url("../img/bg2.jpg"),
+  url("../img/bg3.jpg");
+}
+
+.bg-default {
+  background: url(../img/bg1.jpg)
+  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.bg-next {
+  background: url(../img/bg2.jpg)
+  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.bg-preview {
+  background: url(../img/bg3.jpg)
+  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.bg-default, .bg-next, .bg-preview {
+  transition: 0.50s;
+}
+
+.header_btn {
+  color:lime;
+  cursor: pointer;
+  transition: 0.20s;
+  margin-right: 15px;
+  border-radius: 5px;
+  padding: 5px 35px;
+  border: solid 1px lime;
+  background-color: rgb(10, 10, 10, 0.60);
+  box-shadow: 0px 0px 15px 0px lightgreen;
+}
+
+.header_btn:hover {
+  opacity: 0.60;
+}
+
+.LockOn {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  position: absolute;
+  background-color: transparent;
+  background-image: url("../img/lg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  backdrop-filter: blur(60px) !important;
+}
+
+.fixed-top.scrolled {
+  transition: background-color 200ms linear;
+  background-color: rgb(25, 100, 25, 0.60) !important;
+  box-shadow: 0px 0px 40px 0px limegreen !important;
+}
+
+.fixed-top.scrolled .nav-link {
+  color: lime !important;
+}
+
+.custum_search {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.fixed-top.scrolled .custum_search {
+  border: solid 1px lime !important;
+}
+
+.fixed-top.scrolled .custum_btn {
+  color: lime !important;
+  border: solid 1px lime;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: 222px;
+  object-fit: cover;
+}
+
+.fadedfx {
+  background-color: #fe5652;
+  visibility: hidden;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a.card_link {
+  color: silver;
+  text-decoration: none;
+}
+
+.fi {
+  margin-right: 5px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.fi-sr-shopping-cart:hover {
+  color: limegreen;
+}
+
+.fi-sr-heart:hover {
+  color: red;
+}
+
+.card_footer {
+  justify-content: space-between;
+}
+small {
+  font-family: monospace;
+}
+
+.card_main {
+  overflow: hidden;
+}
+
+.card_images {
+  cursor: pointer;
+  transition: 0.20s;
+}
+
+.card_images:hover {
+  transform: scale(1.2);
+  filter: brightness(0.6);
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom: 45%;
+  position:relative;
+  height:0;
+}
+
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.carousel_img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.ui-menu {
+  z-index: 1500;
+  position: fixed;
+  padding-top: 10px;
+  background: transparent;
+  border-radius: 5px !important;
+}
+
+.ui-menu-item {
+  width: 100%;
+  padding: 5px;
+  max-width: 220px;
+  background-color: rgb(255, 255, 255, 0.60);
+}
+.ui-widget {
+  border:solid 1px transparent !important;
+}
+
+
+.sign_in_body {
+  background: url(../img/bg3.jpg)
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+.sign_in_card {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.form_body {
+  margin: auto;
+  padding: 20px;
+  max-width: 400px;
+  transition: 0.20s;
+  border-radius: 5px;
+  border: solid 1px limegreen;
+  backdrop-filter: blur(10px);
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+.form_body:hover {
+  backdrop-filter: blur(15px);
+}
+
+.sign_in_input {
+  color: limegreen;
+  border: solid 1px limegreen;
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+.sign_in_input:focus {
+  color: lime;
+  box-shadow: none;
+  border: solid 1px lime;
+  background-color: rgb(0, 0, 0, 0.40);
+}
+
+.sign_btn {
+  width: 100%;
+  padding: 4px;
+  color: lightgreen;
+  border-radius: 5px;
+  border: solid 1px lightgreen;
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+input::-webkit-input-placeholder {
+  color: lightgreen !important;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: lime !important;
+}
+#ft-icons {
+  border-radius: 50%;
+  border: solid 2px rebeccapurple;
+  box-shadow: 0px 0px 10px aqua;
+}
+#ft-icons:hover {
+ box-shadow: 10px;
+}
+#ft-icon:hover {
+  color: #C9D3DA !important;
+}
+#pl {
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px aqua;
+}
+
+
+.product-tag {
+  border: solid 1px aqua;
+  background-color: transparent;
+}
+
+.icons {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.contact_height {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
